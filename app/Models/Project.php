@@ -14,4 +14,8 @@ class Project extends Model
         'languages',
         'repo_url'
     ];
+    public function type()
+    {
+        return $this->belongsTo(Type::class);
+    }
 }
